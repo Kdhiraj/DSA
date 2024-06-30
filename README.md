@@ -1,6 +1,6 @@
 # Data Structures and Algorithms
 
-Welcome to the Data Structures and Algorithms repository! This repository is dedicated to learning and practicing various Data Structures and Algorithms concepts using Python programming language.
+Welcome to the Data Structures and Algorithms repository! This repository is dedicated to learning and practicing various Data Structures and Algorithms concepts using JAVA programming language.
 
 ## About
 
