@@ -90,7 +90,7 @@ public class MaxWealth {
         return sum;
     }
 
-    //In one method
+    //In one method to find max wealth of customer
     static int maxWealth(int[][] accounts) {
         //person = row
         //account = column
