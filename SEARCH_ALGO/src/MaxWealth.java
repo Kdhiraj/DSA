@@ -58,11 +58,10 @@ public class MaxWealth {
     /*
      * logic:
      * 1. iterate over each row and do sum of each column element
-     * 2. check greatest
+     * 2. check greatest by comparing with sum of array
      * 3. return greatest
      *
      */
-
     static int maximumWealth(int[][] numbs) {
         ArrayList<Integer> sumList = new ArrayList<>();
         for (int[] numb : numbs) {
@@ -71,7 +70,7 @@ public class MaxWealth {
         }
         return greatestNum(sumList);
     }
-
+   //return greatestNum
     static int greatestNum(ArrayList<Integer> numbs) {
         int max = numbs.getFirst();
         for (int num : numbs) {
@@ -81,7 +80,7 @@ public class MaxWealth {
         }
         return max;
     }
-
+   //Do sum of arrays
     static int sumOfArray(int[] numb) {
         int sum = 0;
         for (int num : numb) {
