@@ -62,32 +62,6 @@ public class MaxWealth {
      * 3. return greatest
      *
      */
-    static int maximumWealth(int[][] numbs) {
-        ArrayList<Integer> sumList = new ArrayList<>();
-        for (int[] numb : numbs) {
-            int sum = sumOfArray(numb);
-            sumList.add(sum);
-        }
-        return greatestNum(sumList);
-    }
-   //return greatestNum
-    static int greatestNum(ArrayList<Integer> numbs) {
-        int max = numbs.getFirst();
-        for (int num : numbs) {
-            if (num > max) {
-                max = num;
-            }
-        }
-        return max;
-    }
-   //Do sum of arrays
-    static int sumOfArray(int[] numb) {
-        int sum = 0;
-        for (int num : numb) {
-            sum = sum + num;
-        }
-        return sum;
-    }
 
     //In one method to find max wealth of customer
     static int maxWealth(int[][] accounts) {
@@ -104,6 +78,36 @@ public class MaxWealth {
             }
         }
         return max;
+    }
+
+
+    static int maximumWealth(int[][] numbs) {
+        ArrayList<Integer> sumList = new ArrayList<>();
+        for (int[] numb : numbs) {
+            int sum = sumOfArray(numb);
+            sumList.add(sum);
+        }
+        return greatestNum(sumList);
+    }
+
+    //return greatestNum
+    static int greatestNum(ArrayList<Integer> numbs) {
+        int max = numbs.getFirst();
+        for (int num : numbs) {
+            if (num > max) {
+                max = num;
+            }
+        }
+        return max;
+    }
+
+    //Do sum of arrays
+    static int sumOfArray(int[] numb) {
+        int sum = 0;
+        for (int num : numb) {
+            sum = sum + num;
+        }
+        return sum;
     }
 
 

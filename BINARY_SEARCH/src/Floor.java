@@ -5,7 +5,7 @@ public class Floor {
         int ans = floor(arr, target);
         System.out.println(ans);
     }
-    // return the index of  greatest number that is <= target
+    // return the index of greatest number that is <= target (NEXT SMALLER ELEMENT)
     static int floor(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
