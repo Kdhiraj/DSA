@@ -13,6 +13,7 @@ public class MultiDimensionalArray {
         // Initialize the array with both rows and columns specified
         int[][] arr = new int[3][3]; // 3 rows and 3 columns
 
+
         int[][] matrix = {
                 //1st 2nd 3rd column
                 {1, 2, 3}, //row1,  0th index

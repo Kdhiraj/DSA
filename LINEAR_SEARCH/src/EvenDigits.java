@@ -27,16 +27,16 @@ public class EvenDigits {
     public static void main(String[] args) {
 
         int[] numbs1 = {12, 345, 2, 6, 7896};
-        int[] numbs2 = {555,901,482,1771};
+        int[] numbs2 = {555, 901, 482, 1771};
         int ans = findNumbers(numbs1);
         int ans2 = findNumbers(numbs2);
         System.out.println(ans);
         System.out.println(ans2);
     }
 
-    static int findNumbers(int[] nums) {
+    static int findNumbers(int[] numbs) {
         int count = 0;
-        for (int num : nums) {
+        for (int num : numbs) {
             if (checkEven(num)) {
                 count++;
             }
@@ -48,7 +48,8 @@ public class EvenDigits {
         int digit = countDigits2(num);
         return digit % 2 == 0;
     }
-   //Brute force method
+
+    //Brute force method
     static int countDigits(int nums) {
         if (nums == 0) return 1;
         if (nums < 0) return nums * -1;
@@ -62,8 +63,7 @@ public class EvenDigits {
     }
 
     //Optimise Way
-
-    static int countDigits2(int nums){
+    static int countDigits2(int nums) {
         if (nums == 0) return 1;
         if (nums < 0) return nums * -1;
         return (int) Math.log10(nums) + 1;
