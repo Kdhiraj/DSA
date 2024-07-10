@@ -28,12 +28,10 @@ import java.util.Arrays;
 public class FirstAndLastPosition {
     public static void main(String[] args) {
         int[] nums = {5,7,7,8,8,10};
-        int[] ans = {-1, -1};
-        int target = 6;
-        int firstIndex = searchRange(nums, target, true);
-        int lastIndex = searchRange(nums, target, false);
-        ans[0] = firstIndex;
-        ans[1] = lastIndex;
+        int[] ans = new int[2];
+        int target = 0;
+        ans[0] = searchRange(nums, target, true);
+        ans[1] = searchRange(nums, target, false);
         System.out.println(Arrays.toString(ans));
     }
 
@@ -51,9 +49,9 @@ public class FirstAndLastPosition {
             } else {
                 ans = mid;
                 if (findStartIndex) {
-                    end = mid - 1;
+                    end = mid - 1;  //keep searching in left half
                 } else {
-                    start = mid + 1;
+                    start = mid + 1; // keep searching in right half
                 }
             }
         }
