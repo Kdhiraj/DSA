@@ -43,9 +43,9 @@ public class FirstAndLastPosition {
         while (start <= end) {
             int mid = start + (end - start) / 2;
             if (target > numbs[mid]) {
-                start = mid + 1;
+                start = mid + 1; // search in right
             } else if (target < numbs[mid]) {
-                end = mid - 1;
+                end = mid - 1; //search in left
             } else {
                 ans = mid;
                 if (findStartIndex) {
